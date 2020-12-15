@@ -3,6 +3,7 @@ const postCssNested = require('postcss-nested')
 
 module.exports = {
   siteName: 'Geekish.dev',
+  icon: './src/favicon.svg',
   templates: {
     Post: '/blog/:title',
     Category: '/category/:id'
