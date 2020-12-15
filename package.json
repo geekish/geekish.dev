@@ -14,6 +14,7 @@
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@tailwindcss/typography": "^0.3.1",
+    "@zefman/gridsome-source-webmention": "^0.1.4",
     "autoprefixer": "^9",
     "dayjs": "^1.9.7",
     "gridsome": "^0.7.0",

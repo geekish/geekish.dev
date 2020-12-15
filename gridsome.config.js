@@ -22,6 +22,13 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: '@zefman/gridsome-source-webmention',
+      options: {
+        domain: 'geekish.dev',
+        token: '5cSvovua2fSb6WjYbKquXg',
+      },
     }
   ],
   transformers: {

@@ -16,6 +16,14 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'me',
     href: 'https://github.com/geekish',
   })
+  head.link.push({
+    rel: 'webmention',
+    href: 'https://webmention.io/geekish.dev/webmention',
+  })
+  head.link.push({
+    rel: 'pingback',
+    href: 'https://webmention.io/geekish.dev/xmlrpc',
+  })
 
   Vue.component('Layout', Layout)
   Vue.prototype.$date = dayjs
