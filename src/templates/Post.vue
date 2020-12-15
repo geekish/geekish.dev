@@ -1,5 +1,8 @@
 <template>
   <Layout>
+    <template #after-brand>
+      <small class="font-mono text-3xl tracking-tight leading-none text-gray-400 lowercase ml-1">/blog</small>
+    </template>
     <article>
       <header class="leading-snug mb-8">
         <h1 class="font-medium text-2xl lg:text-3xl leading-snug text-gray-900 dark:text-gray-100">{{ post.title }}</h1>

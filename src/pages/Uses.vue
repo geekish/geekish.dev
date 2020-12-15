@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <template #after-brand>
-      <small class="font-mono text-3xl tracking-tight leading-none text-gray-400 lowercase ml-2">/uses</small>
+      <small class="font-mono text-3xl tracking-tight leading-none text-gray-400 lowercase ml-1">/uses</small>
     </template>
     <article>
       <div class="prose max-w-none text-gray-700 dark:text-gray-200">

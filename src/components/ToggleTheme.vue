@@ -1,5 +1,5 @@
 <template>
-  <button class="text-gray-900 hover:text-indigo-700 dark:text-gray-100 dark:hover:text-indigo-200 focus:outline-none" @click="toggleTheme">
+  <button class="text-gray-900 hover:text-indigo-700 dark:text-gray-100 dark:hover:text-yellow-200 focus:outline-none" @click="toggleTheme">
     <svg v-if="theme === 'dark'" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
       <circle cx="12" cy="12" r="4" />
