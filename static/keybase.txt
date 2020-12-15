@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/geekish
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://geekish.dev
+  * I am geekish (https://keybase.io/geekish) on keybase.
+  * I have a public key with fingerprint 9B86 51B4 600C 319D E248  955F 7F82 CE3E 62EE FED0
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a7f311aa077f31bb9ee6683ac26cd1d9d8f41280e57ad3787c820f4cbe3db7420a",
+      "fingerprint": "9b8651b4600c319de248955f7f82ce3e62eefed0",
+      "host": "keybase.io",
+      "key_id": "7f82ce3e62eefed0",
+      "kid": "0101c3218d002e3040bd219aa41801ac3f0d73e2de5604d9a3cfa9c43283940f2d5d0a",
+      "uid": "9ff4aa458055a2fa5e5231a221229319",
+      "username": "geekish"
+    },
+    "service": {
+      "hostname": "geekish.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1608071638,
+  "expire_in": 157680000,
+  "prev": "13a325d62891d70f41be7027e1c7c3f3cf26071c67345ab390e191f54503a104",
+  "seqno": 41,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNsAnicbVJtUFRVGF42sIT4WESCsI+5gwrDCuec+73UMjmCjNMQCTkWDuv9OBdu
+4O6yu3zsgDkChYSOiLZTOEI2gqDDSOJMrY4hQcJICk2G4rgSWVRogZnuD4XpLpM/
+mun8Oee853me93nf8w6FP6ULDdpVe8Us/rk4HjQ64CnXWSb5iWpCtMluwlRNlOCl
+DZfK2OmylKgyYSIAREBgFRJCQQBs4CCKPMYMw5GChBhJhjIvcwoFEQcwzQoyyXKs
+xCGgUJKISVlkKU2AMBKKai3CDrtDtbo0WV7kGBqKFAOAREJexojieJpWWIVDEiYx
+gzBWsAw0YrHNGWBo5kTBiVNVmxbTLpYle/+Df+IbQIlEkJMBQJgEFBBlBHlBoCAH
+oCCRCpBZEiMZ0wygZF4gJUXgJYpEHMlTQEEyLS/5Ll+S4xWF0rg0B2haQIpAYxqR
+UEAIIsRrBQSATuywCjuwhi7CuER1FhM7jYQWrFAlHOhroJD/AlJlXKEx7Q6byybZ
+SrWHYpfL7jQFiC63PYCsxKLlXw2LqFplrYsaowI7nKrNSpighpRcakAUMoADLGRI
+zkjgKrvqwBY1gKBZhgPaCuTR0pkISAokomUGcTyUWe2joIhZgFgMJVbri9YIxGhC
+EsOSFC2IJA8w5KFCUzQgBQgoIlBVmdVGmCio+RSKNE2nWmQVXOUOTOz8emBbsC4o
+VLcsRB8YL13o8qgnQxf/W+Ri2tWvgh/WzK0Zbr0XzCfm2G93hCSF967Mbn5ly7r6
+giOzr/XO5hdGF+Ssllf+HFOyfuJy6wfJWdEbT5APvF2Jq+kUJRUY188/rhDXmnOy
+6juqf/LcTNn/xY7598y7qXfm9r/ltxe7Y425PziqeppGipxhtc9k9V0uDL511Pl3
+ZtTo8HH9ub+WpTa0D8UevHf2UNCKKe+gIdvVNnmj5fDk9vCNi2kdQ1sau+cNDZ4D
+eaeS59IvynELNYMtb7961+dG7z53u7PzUVVe6FjncN3x5RknxxPNl7pOxN4aiDtv
+GHnhVyKhPv3GAdKR/kbmJn3mWLf/0/iL24c6e6fzMxZi8gv73PPvb/3m5Hq3q7nx
+u6Of+3NrjB9/NB0ds5s/e9XU/8uXPZ446nxU54PUbS8WzODeNXWfJXjB71m6Z7OZ
+I6v0aZsT2sf1Tfqtlddf+iR/pnm45bS/gW/yJbHfd20IMQiF+2ZOR1jG1vrMSQKw
+p1f6dbOtdddPdZUeLIvAFyYKnh9JiYg8bGiKvT/ftOvpzSm2vFzrH/4UlNbdJi7c
+PZccf/9xY7XTU9pWnrAvJ2av7wrK6Kvlj5k3WAqOhfXrvESG784FT/iKh6s27dkz
+daY9erq8ZWjq5elLd26+fmi0sT2i/dqHDYbGN8/E9lxjxfEyhYh8hL0tP4Z96+sP
+WTc4HGXzouAS0z9ncbm5
+=4btl
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/geekish
+
+==================================================================
