@@ -5,11 +5,16 @@ const plugin = require('tailwindcss/plugin')
 const prose = require('./src/typography')
 
 module.exports = {
-  purge: [
-    './content/**/*.md',
-    './src/**/*.vue',
-    './src/index.html',
-  ],
+  purge: {
+    content: [
+      './content/**/*.md',
+      './src/**/*.vue',
+      './src/index.html',
+    ],
+    options: {
+      safelist: ['emoji'],
+    }
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     textStyles: { prose },
