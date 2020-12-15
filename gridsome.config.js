@@ -4,7 +4,7 @@ const postCssNested = require('postcss-nested')
 module.exports = {
   siteName: 'Geekish.dev',
   templates: {
-    Post: '/:year/:month/:day/:title',
+    Post: '/blog/:title',
     Category: '/category/:id'
   },
   plugins: [
