@@ -24,6 +24,11 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'pingback',
     href: 'https://webmention.io/geekish.dev/xmlrpc',
   })
+  head.link.push({
+    rel: 'pgpkey',
+    href: '/key.txt',
+    type: 'text/plain',
+  })
 
   Vue.component('Layout', Layout)
   Vue.prototype.$date = dayjs
