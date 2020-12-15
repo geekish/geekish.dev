@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ${htmlAttrs}>
+<head>
+  ${head}
+</head>
+<body class="bg-white dark:bg-gray-900 dark:text-gray-50" ${bodyAttrs}>
+<script>
+  // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+  (function() {
+    window.__onThemeChange = function() {};
+    function setTheme(newTheme) {
+      window.__theme = newTheme;
+      preferredTheme = newTheme;
+
+      if (newTheme === 'dark')
+        document.querySelector('html').classList.add('dark');
+      else
+        document.querySelector('html').classList.remove('dark');
+
+      window.__onThemeChange(newTheme);
+    }
+
+    var preferredTheme;
+    try {
+      preferredTheme = localStorage.getItem('theme');
+    } catch (err) { }
+
+    window.__setPreferredTheme = function(newTheme) {
+      setTheme(newTheme);
+      try {
+        localStorage.setItem('theme', newTheme);
+      } catch (err) {}
+    }
+
+    var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    darkQuery.addListener(function(e) {
+      window.__setPreferredTheme(e.matches ? 'dark' : 'light');
+    });
+
+    setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+  })();
+</script>
+${app}
+${scripts}
+</body>
+</html>

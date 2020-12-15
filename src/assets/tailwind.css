@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /*font-size: 17px;*/
+  }
+
+  body {
+    @apply antialiased leading-relaxed;
+  }
+
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-12;
+  }
+  .emoji {
+    @apply inline-block w-5 h-5 align-text-top my-0;
+  }
+  .text-2xl .emoji {
+    @apply w-6 h-6;
+  }
+  dt .emoji {
+    @apply mr-2 -mt-1 align-text-bottom;
+  }
+  [data-tippy-content] {
+    cursor: help;
+  }
+
+
+  .prose a {
+    @apply text-indigo-600;
+  }
+
+  .prose a:hover {
+    @apply text-indigo-800;
+  }
+
+  .dark {
+    .prose a {
+      @apply text-indigo-400;
+    }
+
+    .prose a:hover {
+      @apply text-indigo-500;
+    }
+
+    .prose hr {
+      @apply border-gray-800;
+    }
+  }
+}
+
+@layer utilities {
+  @variants group-hover, hover {
+    .rainbow {
+      background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+      background-size: 1800% 1800%;
+      background-clip: text;
+      color: transparent;
+
+      -webkit-animation: rainbow 18s ease infinite;
+      -z-animation: rainbow 18s ease infinite;
+      -o-animation: rainbow 18s ease infinite;
+      animation: rainbow 18s ease infinite;
+    }
+  }
+
+  @-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+  }
+  @keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+  }
+}
