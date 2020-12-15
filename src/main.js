@@ -17,11 +17,6 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://github.com/geekish',
   })
 
-  head.link.push({
-    rel: 'pgpkey authn',
-    href: '/keybase.txt',
-  })
-
   Vue.component('Layout', Layout)
   Vue.prototype.$date = dayjs
 }
