@@ -6,8 +6,9 @@ const prose = require('./src/typography')
 
 module.exports = {
   purge: [
-    './src/**/*.md',
+    './content/**/*.md',
     './src/**/*.vue',
+    './src/index.html',
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {

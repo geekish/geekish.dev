@@ -4,9 +4,7 @@
       <div class="text-center md:text-left">
         <p class="text-2xl text-gray-600 dark:text-gray-400 leading-relaxed md:mt-5 md:max-w-4xl">
           <strong class="font-medium text-gray-800 dark:text-gray-200">Hi, I'm Hannah! 👋</strong>
-          I am a full-time parent and a web developer.
-<!--          I'm a fan of <a class="font-medium text-indigo-600" href="https://laravel.com">Laravel</a> and <a class="font-medium text-indigo-600" href="https://statamic.com">Statamic</a>.-->
-          This is the place where I write about everything <code class="text-gray-800 dark:text-gray-200">&lt;geekish&gt;</code>.
+          I am a full-time parent and a web developer. This is the place where I write about everything <code class="text-gray-800 dark:text-gray-200">&lt;geekish&gt;</code>.
         </p>
       </div>
     </div>
