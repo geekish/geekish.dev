@@ -50,9 +50,10 @@
       @apply text-indigo-500;
     }
 
-    .prose hr {
+    hr {
       @apply border-gray-800;
     }
+
   }
 }
 

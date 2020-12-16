@@ -19,6 +19,7 @@
     "dayjs": "^1.9.7",
     "gridsome": "^0.7.0",
     "lodash": "^4.17.20",
+    "pluralize": "^8.0.0",
     "postcss": "^7",
     "postcss-nested": "^4.2.3",
     "prism-themes": "^1.5.0",

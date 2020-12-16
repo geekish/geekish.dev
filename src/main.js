@@ -1,6 +1,7 @@
 import dayjs from 'dayjs'
 import advancedFormat from 'dayjs/plugin/advancedFormat'
-import localizedFormat from 'dayjs/plugin/localizedFormat'
+import updateLocale from 'dayjs/plugin/updateLocale'
+import relativeTime from 'dayjs/plugin/relativeTime'
 
 import '~/assets/tailwind.css'
 import Layout from '~/layouts/Layout.vue'
@@ -9,7 +10,26 @@ import 'tippy.js/dist/tippy.css'
 import 'prism-themes/themes/prism-dracula.css'
 
 dayjs.extend(advancedFormat)
-dayjs.extend(localizedFormat)
+dayjs.extend(updateLocale)
+dayjs.extend(relativeTime)
+
+dayjs.updateLocale('en', {
+  relativeTime: {
+    future: 'in %s',
+    past: '%s',
+    s: 'just now',
+    m: '1m',
+    mm: '%dm',
+    h: '1h',
+    hh: '%dh',
+    d: 'yesterday',
+    dd: '%dd',
+    M: '1mo',
+    MM: '%dmo',
+    y: '1y',
+    yy: '%dy',
+  },
+})
 
 export default function (Vue, { router, head, isClient }) {
   head.link.push({
