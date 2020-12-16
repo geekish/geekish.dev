@@ -41,7 +41,7 @@
             <dd class="flex-grow">
               <p>
                 Mostly used for gaming and reading. 🤷 The <a
-                href="https://amzn.to/34nNXp6" data-tippy-content="* Affiliate link">Apple Pencil</a> is great with GoodNotes & Procreate.
+                href="https://amzn.to/2Wnknei" data-tippy-content="* Affiliate link">Apple Pencil</a> is great with GoodNotes & Procreate.
               </p>
             </dd>
           </div>
@@ -52,18 +52,16 @@
             <dd class="flex-grow">
               <p>
                 My second Pixel after the OG Pixel.
-                <br>
-                Fun fact: my <a href="https://amzn.to/33aH7m4" data-tippy-content="* Affiliate link">Bose speaker</a> pronounces its name with a long O.
               </p>
             </dd>
           </div>
           <div class="py-4">
             <dt :class="dtClass">
-              📷 <a href="https://amzn.to/2CT2eyT" data-tippy-content="* Affiliate link">Canon T5i</a>
+              📷 <a href="https://amzn.to/3ansRu9" data-tippy-content="* Affiliate link">Canon T5i</a>
             </dt>
             <dd class="flex-grow">
               <p>
-                I have the kit 18-55mm lens and a nifty <a href="https://amzn.to/2X8JEtu" data-tippy-content="* Affiliate link">50mm f/1.8</a>.
+                I have the kit 18-55mm lens and a nifty <a href="https://amzn.to/3oUMIEQ" data-tippy-content="* Affiliate link">50mm f/1.8</a>.
               </p>
             </dd>
           </div>
