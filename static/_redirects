@@ -1,1 +1,2 @@
 https://geeki.sh https://geekish.dev 301!
+https://geekish.netlify.app/* https://geekish.dev/:splat 301!
