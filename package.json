@@ -16,7 +16,7 @@
     "@tailwindcss/typography": "^0.3.1",
     "@zefman/gridsome-source-webmention": "^0.1.4",
     "autoprefixer": "^9",
-    "dayjs": "^1.9.7",
+    "date-fns": "^2.19.0",
     "gridsome": "^0.7.0",
     "lodash": "^4.17.20",
     "pluralize": "^8.0.0",

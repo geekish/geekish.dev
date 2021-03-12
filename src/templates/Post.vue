@@ -7,7 +7,7 @@
       <header class="mb-8 leading-snug">
         <h1 class="text-2xl font-medium leading-snug text-gray-900 lg:text-3xl dark:text-gray-100">{{ post.title }}</h1>
         <p class="mt-2 text-lg leading-6 text-gray-500">
-          <time :datetime="post.date">{{ date.format('MMMM Do, YYYY') }}</time>
+          <time :datetime="post.date">{{ date }}</time>
         </p>
       </header>
       <div class="mx-auto prose text-gray-700 dark:text-gray-200" v-html="post.content" />
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { format, parseISO } from 'date-fns'
 import Webmentions from '~/components/Webmentions'
 
 export default {
@@ -28,7 +29,7 @@ export default {
       return this.$page.post
     },
     date () {
-      return this.$date(this.$page.post.date)
+      return format(parseISO(this.$page.post.date), 'MMMM do, yyyy')
     },
   },
 }
@@ -38,7 +39,7 @@ query Post($path: String!) {
   post: post(path: $path) {
     title
     path
-    date(format: "D. MMMM YYYY")
+    date
     timeToRead
     categories {
       id

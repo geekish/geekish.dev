@@ -55,6 +55,8 @@
 </template>
 
 <script>
+import { each, replace } from 'lodash'
+import { formatDistanceToNowStrict, parseISO } from 'date-fns'
 import pluralize from 'pluralize'
 
 export default {
@@ -97,7 +99,22 @@ export default {
       return this.mentions.edges.filter(edge => edge.node.wmProperty === type)
     },
     relativeTime (date) {
-      return this.$date(date).fromNow()
+      let relative = formatDistanceToNowStrict(parseISO(date))
+
+      const map = {
+        s: 'seconds',
+        m: 'minutes',
+        h: 'hours',
+        d: 'days',
+        mo: 'months',
+        y: 'years',
+      }
+
+      each(map, (find, sub) => {
+        relative = replace(relative, find, sub)
+      })
+
+      return relative
     },
     pluralize (value, count, prefix = true) {
       return pluralize(value, count, prefix)
