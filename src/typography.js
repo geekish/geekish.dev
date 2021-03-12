@@ -257,7 +257,7 @@ module.exports = {
     },
     '> p:last-child': {
       marginBottom: 0,
-    }
+    },
   },
 }
 

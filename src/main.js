@@ -31,7 +31,7 @@ dayjs.updateLocale('en', {
   },
 })
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { head }) {
   head.link.push({
     rel: 'me',
     href: 'https://github.com/geekish',

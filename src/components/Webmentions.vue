@@ -13,7 +13,7 @@
     </div>
 
     <div v-if="hasLikes" class="mb-6">
-      <h6 class="font-medium text-xl mb-4">{{ pluralize('Like', likes.length) }}</h6>
+      <h6 class="mb-4 text-xl font-medium">{{ pluralize('Like', likes.length) }}</h6>
       <div class="flex flex-wrap items-center">
         <a :href="mention.node.author.url" v-for="mention in likes" :key="mention.node.wmId" class="p-1 mr-1">
           <g-image :src="mention.node.author.photo" class="inline w-10 h-10 rounded-full" />
@@ -22,7 +22,7 @@
     </div>
 
     <div v-if="hasRetweets" class="mb-6">
-      <h6 class="font-medium text-xl mb-4">{{ pluralize('Retweet', retweets.length) }}</h6>
+      <h6 class="mb-4 text-xl font-medium">{{ pluralize('Retweet', retweets.length) }}</h6>
       <div class="flex flex-wrap items-center">
         <a :href="mention.node.url" v-for="mention in retweets" :key="mention.node.wmId" class="p-1 mr-1">
           <g-image :src="mention.node.author.photo" class="inline w-10 h-10 rounded-full" />
@@ -31,9 +31,9 @@
     </div>
 
     <div v-if="hasReplies" class="mb-6">
-      <h6 class="font-medium text-xl mb-4">{{ pluralize('Reply', replies.length) }}</h6>
+      <h6 class="mb-4 text-xl font-medium">{{ pluralize('Reply', replies.length) }}</h6>
       <div
-        class="group flex items-start p-4 my-2 bg-gray-100 dark:bg-gray-800 group-hover:bg-gray-100 dark:group-hover:bg-gray-700"
+        class="flex items-start p-4 my-2 bg-gray-100 group dark:bg-gray-800 group-hover:bg-gray-100 dark:group-hover:bg-gray-700"
         v-for="mention in replies"
         :key="mention.node.wmId"
       >
@@ -41,7 +41,7 @@
         <div class="pl-4">
           <a
             :href="mention.node.author.url"
-            class="font-medium text-lg text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-500">
+            class="text-lg font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-500">
             {{ mention.node.author.name }}
           </a>
           <span class="text-gray-500">· <a href="mention.node.url"><time
@@ -59,7 +59,16 @@ import pluralize from 'pluralize'
 
 export default {
   name: "Webmentions",
-  props: ['mentions', 'post'],
+  props: {
+    mentions: {
+      type: Array,
+      required: true,
+    },
+    post: {
+      type: Object,
+      required: true,
+    },
+  },
   computed: {
     total () {
       return this.mentions.totalCount
@@ -93,10 +102,6 @@ export default {
     pluralize (value, count, prefix = true) {
       return pluralize(value, count, prefix)
     },
-  }
+  },
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,10 +1,12 @@
 <template>
   <Layout>
     <template #after-brand>
-      <small class="font-mono text-3xl tracking-tight leading-none text-gray-400 lowercase ml-1">/about</small>
+      <small class="ml-1 font-mono text-3xl leading-none tracking-tight text-gray-400 lowercase">/about</small>
     </template>
     <article class="prose">
-      <p class="lead">Hi! I’m Hannah. I live in Iowa with my fiancé, our daughter, and two cats. My favorite food is mac & cheese. I'll write more here soon.</p>
+      <p class="lead">
+        Hi! I’m Hannah. I live in Iowa with my fiancé, our daughter, and two cats. My favorite food is mac & cheese. I'll write more here soon.
+      </p>
 
       <h3>Find me elsewhere:</h3>
 
@@ -21,7 +23,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About us'
-  }
+    title: 'About',
+  },
 }
 </script>

@@ -1,13 +1,13 @@
 <template>
   <Layout>
     <template #after-brand>
-      <small class="font-mono text-3xl tracking-tight leading-none text-gray-400 lowercase ml-1">/uses</small>
+      <small class="ml-1 font-mono text-3xl leading-none tracking-tight text-gray-400 lowercase">/uses</small>
     </template>
     <article>
-      <div class="prose max-w-none text-gray-700 dark:text-gray-200">
+      <div class="prose text-gray-700 max-w-none dark:text-gray-200">
         <p class="lead">This page has been around for years, originally called “Colophon”. A colophon is defined as “an inscription at the end of a book or manuscript usually with facts about its production”. Now it has trendy, with a listing at <a href="https://uses.tech/">uses.tech</a>!</p>
 
-        <p class="bg-yellow-50 dark:bg-gray-800 border-l-4 border-yellow-200 dark:border-gray-600 p-4 text-base leading-7 text-gray-600 dark:text-gray-400">
+        <p class="p-4 text-base leading-7 text-gray-600 border-l-4 border-yellow-200 bg-yellow-50 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
           Some of the following links are affiliate or referral links, and I have done my best to mark them as such. As an Amazon Associate I earn from qualifying purchases. This helps me pay my bills!
         </p>
 
@@ -25,7 +25,7 @@
             </dd>
           </div>
           <div class="py-4">
-            <dt class="mb-2 lg:mb-2 flex-shrink-0 font-medium text-lg text-gray-900">
+            <dt class="flex-shrink-0 mb-2 text-lg font-medium text-gray-900 lg:mb-2">
               🍏 <span data-tippy-content="Wats0n" data-tippy-placement="left">2012 Mac Mini</span>
             </dt>
             <dd class="flex-grow">
@@ -292,7 +292,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About us'
+    title: 'About us',
   },
   data () {
     return {

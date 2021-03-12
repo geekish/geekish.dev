@@ -1,12 +1,12 @@
 <template>
   <Layout>
     <template #after-brand>
-      <small class="font-mono text-3xl tracking-tight leading-none text-gray-400 lowercase ml-1">/blog</small>
+      <small class="ml-1 font-mono text-3xl leading-none tracking-tight text-gray-400 lowercase">/blog</small>
     </template>
     <article>
-      <header class="leading-snug mb-8">
-        <h1 class="font-medium text-2xl lg:text-3xl leading-snug text-gray-900 dark:text-gray-100">{{ post.title }}</h1>
-        <p class="mt-2 text-gray-500 text-lg leading-6">
+      <header class="mb-8 leading-snug">
+        <h1 class="text-2xl font-medium leading-snug text-gray-900 lg:text-3xl dark:text-gray-100">{{ post.title }}</h1>
+        <p class="mt-2 text-lg leading-6 text-gray-500">
           <time :datetime="post.date">{{ date.format('MMMM Do, YYYY') }}</time>
         </p>
       </header>
@@ -18,8 +18,7 @@
 </template>
 
 <script>
-import pluralize from 'pluralize'
-import Webmentions from '../components/Webmentions'
+import Webmentions from '~/components/Webmentions'
 
 export default {
   name: "Post",
@@ -35,11 +34,11 @@ export default {
 }
 </script>
 <page-query>
-query Post ($path: String!) {
-  post: post (path: $path) {
+query Post($path: String!) {
+  post: post(path: $path) {
     title
     path
-    date (format: "D. MMMM YYYY")
+    date(format: "D. MMMM YYYY")
     timeToRead
     categories {
       id
@@ -48,7 +47,7 @@ query Post ($path: String!) {
     }
     content
   }
-  mentions: allWebMention (filter: { wmTarget: { regex: $path } }) {
+  mentions: allWebMention(filter: { wmTarget: { regex: $path } }) {
     totalCount
     edges {
       node {
