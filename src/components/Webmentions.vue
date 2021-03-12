@@ -44,7 +44,7 @@
             class="text-lg font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-500">
             {{ mention.node.author.name }}
           </a>
-          <span class="text-gray-500">· <a href="mention.node.url"><time
+          <span class="text-gray-500">· <a :href="mention.node.url"><time
             :datetime="mention.node.published">{{ relativeTime(mention.node.published) }}</time></a></span>
           <p class="mt-2">{{ mention.node.content.text }}</p>
         </div>
@@ -58,10 +58,10 @@
 import pluralize from 'pluralize'
 
 export default {
-  name: "Webmentions",
+  name: 'Webmentions',
   props: {
     mentions: {
-      type: Array,
+      type: [Array, Object],
       required: true,
     },
     post: {
@@ -93,7 +93,7 @@ export default {
     },
   },
   methods: {
-    filterMentions: function (type) {
+    filterMentions (type) {
       return this.mentions.edges.filter(edge => edge.node.wmProperty === type)
     },
     relativeTime (date) {
